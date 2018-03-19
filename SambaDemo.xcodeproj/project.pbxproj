@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A692DB1205F39590062A3EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DB0205F39590062A3EF /* AppDelegate.m */; };
+		5A692DB4205F39590062A3EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DB3205F39590062A3EF /* ViewController.m */; };
+		5A692DB7205F39590062A3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A692DB5205F39590062A3EF /* Main.storyboard */; };
+		5A692DB9205F39590062A3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A692DB8205F39590062A3EF /* Assets.xcassets */; };
+		5A692DBC205F39590062A3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A692DBA205F39590062A3EF /* LaunchScreen.storyboard */; };
+		5A692DBF205F39590062A3EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DBE205F39590062A3EF /* main.m */; };
+		5A692DE6205F39650062A3EF /* EasySambaFileHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DC8205F39650062A3EF /* EasySambaFileHTTPResponse.m */; };
+		5A692DE7205F39650062A3EF /* EasySambaHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DCA205F39650062A3EF /* EasySambaHTTPConnection.m */; };
+		5A692DE8205F39650062A3EF /* EasySambaHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DCC205F39650062A3EF /* EasySambaHTTPServer.m */; };
+		5A692DE9205F39650062A3EF /* KxSMBProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DCF205F39650062A3EF /* KxSMBProvider.m */; };
+		5A692DEA205F39650062A3EF /* libsmbclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692DD1205F39650062A3EF /* libsmbclient.a */; };
+		5A692DEB205F39650062A3EF /* libtalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692DD3205F39650062A3EF /* libtalloc.a */; };
+		5A692DEC205F39650062A3EF /* libtdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692DD4205F39650062A3EF /* libtdb.a */; };
+		5A692DED205F39650062A3EF /* libtevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692DD5205F39650062A3EF /* libtevent.a */; };
+		5A692DEE205F39650062A3EF /* libwbclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692DD6205F39650062A3EF /* libwbclient.a */; };
+		5A692DEF205F39650062A3EF /* XLSambaDownloadHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DDB205F39650062A3EF /* XLSambaDownloadHandler.m */; };
+		5A692DF0205F39650062A3EF /* XLSambaDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DDD205F39650062A3EF /* XLSambaDownloadTask.m */; };
+		5A692DF1205F39650062A3EF /* XLSambaTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DDF205F39650062A3EF /* XLSambaTask.m */; };
+		5A692DF2205F39650062A3EF /* XLSambaUploadHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DE1205F39650062A3EF /* XLSambaUploadHandler.m */; };
+		5A692DF3205F39650062A3EF /* XLSambaUploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DE3205F39650062A3EF /* XLSambaUploadTask.m */; };
+		5A692DF4205F39650062A3EF /* XLUploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DE5205F39650062A3EF /* XLUploadTask.m */; };
+		5A692DF7205F39C90062A3EF /* SambaPathFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A692DF6205F39C90062A3EF /* SambaPathFormatter.m */; };
+		5A692DFF205F3C590062A3EF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692DFE205F3C590062A3EF /* libz.tbd */; };
+		5A692E01205F3C710062A3EF /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692E00205F3C710062A3EF /* libiconv.tbd */; };
+		5A692E03205F3C830062A3EF /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A692E02205F3C830062A3EF /* libresolv.tbd */; };
+		AADE2144EDD2FEB931E67249 /* libPods-SambaDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E142C9EA92CFAB2F953E3747 /* libPods-SambaDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C7F1E549BFD666C87FE7DC7 /* Pods-SambaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SambaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SambaDemo/Pods-SambaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5A692DAC205F39590062A3EF /* SambaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SambaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A692DAF205F39590062A3EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A692DB0205F39590062A3EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A692DB2205F39590062A3EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A692DB3205F39590062A3EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A692DB6205F39590062A3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A692DB8205F39590062A3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A692DBB205F39590062A3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A692DBD205F39590062A3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A692DBE205F39590062A3EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A692DC7205F39650062A3EF /* EasySambaFileHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasySambaFileHTTPResponse.h; sourceTree = "<group>"; };
+		5A692DC8205F39650062A3EF /* EasySambaFileHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasySambaFileHTTPResponse.m; sourceTree = "<group>"; };
+		5A692DC9205F39650062A3EF /* EasySambaHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasySambaHTTPConnection.h; sourceTree = "<group>"; };
+		5A692DCA205F39650062A3EF /* EasySambaHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasySambaHTTPConnection.m; sourceTree = "<group>"; };
+		5A692DCB205F39650062A3EF /* EasySambaHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasySambaHTTPServer.h; sourceTree = "<group>"; };
+		5A692DCC205F39650062A3EF /* EasySambaHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasySambaHTTPServer.m; sourceTree = "<group>"; };
+		5A692DCE205F39650062A3EF /* KxSMBProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxSMBProvider.h; sourceTree = "<group>"; };
+		5A692DCF205F39650062A3EF /* KxSMBProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxSMBProvider.m; sourceTree = "<group>"; };
+		5A692DD1205F39650062A3EF /* libsmbclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmbclient.a; sourceTree = "<group>"; };
+		5A692DD2205F39650062A3EF /* libsmbclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsmbclient.h; sourceTree = "<group>"; };
+		5A692DD3205F39650062A3EF /* libtalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtalloc.a; sourceTree = "<group>"; };
+		5A692DD4205F39650062A3EF /* libtdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtdb.a; sourceTree = "<group>"; };
+		5A692DD5205F39650062A3EF /* libtevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtevent.a; sourceTree = "<group>"; };
+		5A692DD6205F39650062A3EF /* libwbclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwbclient.a; sourceTree = "<group>"; };
+		5A692DD7205F39650062A3EF /* talloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = talloc.h; sourceTree = "<group>"; };
+		5A692DD8205F39650062A3EF /* talloc_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = talloc_stack.h; sourceTree = "<group>"; };
+		5A692DDA205F39650062A3EF /* XLSambaDownloadHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSambaDownloadHandler.h; sourceTree = "<group>"; };
+		5A692DDB205F39650062A3EF /* XLSambaDownloadHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSambaDownloadHandler.m; sourceTree = "<group>"; };
+		5A692DDC205F39650062A3EF /* XLSambaDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSambaDownloadTask.h; sourceTree = "<group>"; };
+		5A692DDD205F39650062A3EF /* XLSambaDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSambaDownloadTask.m; sourceTree = "<group>"; };
+		5A692DDE205F39650062A3EF /* XLSambaTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSambaTask.h; sourceTree = "<group>"; };
+		5A692DDF205F39650062A3EF /* XLSambaTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSambaTask.m; sourceTree = "<group>"; };
+		5A692DE0205F39650062A3EF /* XLSambaUploadHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSambaUploadHandler.h; sourceTree = "<group>"; };
+		5A692DE1205F39650062A3EF /* XLSambaUploadHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSambaUploadHandler.m; sourceTree = "<group>"; };
+		5A692DE2205F39650062A3EF /* XLSambaUploadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSambaUploadTask.h; sourceTree = "<group>"; };
+		5A692DE3205F39650062A3EF /* XLSambaUploadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSambaUploadTask.m; sourceTree = "<group>"; };
+		5A692DE4205F39650062A3EF /* XLUploadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLUploadTask.h; sourceTree = "<group>"; };
+		5A692DE5205F39650062A3EF /* XLUploadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLUploadTask.m; sourceTree = "<group>"; };
+		5A692DF5205F39C90062A3EF /* SambaPathFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SambaPathFormatter.h; sourceTree = "<group>"; };
+		5A692DF6205F39C90062A3EF /* SambaPathFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SambaPathFormatter.m; sourceTree = "<group>"; };
+		5A692DF9205F3A6F0062A3EF /* FastCodeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCodeHeader.h; sourceTree = "<group>"; };
+		5A692DFA205F3A6F0062A3EF /* FrameHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameHeader.h; sourceTree = "<group>"; };
+		5A692DFC205F3A6F0062A3EF /* SystemDeviceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemDeviceHeader.h; sourceTree = "<group>"; };
+		5A692DFD205F3AA50062A3EF /* SambaDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SambaDemo.pch; sourceTree = "<group>"; };
+		5A692DFE205F3C590062A3EF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5A692E00205F3C710062A3EF /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		5A692E02205F3C830062A3EF /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		E142C9EA92CFAB2F953E3747 /* libPods-SambaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SambaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FE81C31E0703E5C489409E /* Pods-SambaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SambaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SambaDemo/Pods-SambaDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A692DA9205F39590062A3EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A692E03205F3C830062A3EF /* libresolv.tbd in Frameworks */,
+				5A692E01205F3C710062A3EF /* libiconv.tbd in Frameworks */,
+				5A692DFF205F3C590062A3EF /* libz.tbd in Frameworks */,
+				5A692DEC205F39650062A3EF /* libtdb.a in Frameworks */,
+				5A692DEE205F39650062A3EF /* libwbclient.a in Frameworks */,
+				5A692DEB205F39650062A3EF /* libtalloc.a in Frameworks */,
+				5A692DEA205F39650062A3EF /* libsmbclient.a in Frameworks */,
+				5A692DED205F39650062A3EF /* libtevent.a in Frameworks */,
+				AADE2144EDD2FEB931E67249 /* libPods-SambaDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6F843655D2E5596C5E291D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C7F1E549BFD666C87FE7DC7 /* Pods-SambaDemo.debug.xcconfig */,
+				F3FE81C31E0703E5C489409E /* Pods-SambaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		475EFC3304DC0299B9D8D11D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A692E02205F3C830062A3EF /* libresolv.tbd */,
+				5A692E00205F3C710062A3EF /* libiconv.tbd */,
+				5A692DFE205F3C590062A3EF /* libz.tbd */,
+				E142C9EA92CFAB2F953E3747 /* libPods-SambaDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A692DA3205F39590062A3EF = {
+			isa = PBXGroup;
+			children = (
+				5A692DAE205F39590062A3EF /* SambaDemo */,
+				5A692DAD205F39590062A3EF /* Products */,
+				2B6F843655D2E5596C5E291D /* Pods */,
+				475EFC3304DC0299B9D8D11D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A692DAD205F39590062A3EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DAC205F39590062A3EF /* SambaDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A692DAE205F39590062A3EF /* SambaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DAF205F39590062A3EF /* AppDelegate.h */,
+				5A692DB0205F39590062A3EF /* AppDelegate.m */,
+				5A692DB2205F39590062A3EF /* ViewController.h */,
+				5A692DB3205F39590062A3EF /* ViewController.m */,
+				5A692DF8205F3A6F0062A3EF /* Header */,
+				5A692DC5205F39650062A3EF /* samba */,
+				5A692DB5205F39590062A3EF /* Main.storyboard */,
+				5A692DB8205F39590062A3EF /* Assets.xcassets */,
+				5A692DBA205F39590062A3EF /* LaunchScreen.storyboard */,
+				5A692DBD205F39590062A3EF /* Info.plist */,
+				5A692DBE205F39590062A3EF /* main.m */,
+				5A692DFD205F3AA50062A3EF /* SambaDemo.pch */,
+			);
+			path = SambaDemo;
+			sourceTree = "<group>";
+		};
+		5A692DC5205F39650062A3EF /* samba */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DF5205F39C90062A3EF /* SambaPathFormatter.h */,
+				5A692DF6205F39C90062A3EF /* SambaPathFormatter.m */,
+				5A692DC6205F39650062A3EF /* HttpServer */,
+				5A692DCD205F39650062A3EF /* KxSMB */,
+				5A692DD9205F39650062A3EF /* XLSambaTask */,
+			);
+			path = samba;
+			sourceTree = "<group>";
+		};
+		5A692DC6205F39650062A3EF /* HttpServer */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DC7205F39650062A3EF /* EasySambaFileHTTPResponse.h */,
+				5A692DC8205F39650062A3EF /* EasySambaFileHTTPResponse.m */,
+				5A692DC9205F39650062A3EF /* EasySambaHTTPConnection.h */,
+				5A692DCA205F39650062A3EF /* EasySambaHTTPConnection.m */,
+				5A692DCB205F39650062A3EF /* EasySambaHTTPServer.h */,
+				5A692DCC205F39650062A3EF /* EasySambaHTTPServer.m */,
+			);
+			path = HttpServer;
+			sourceTree = "<group>";
+		};
+		5A692DCD205F39650062A3EF /* KxSMB */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DCE205F39650062A3EF /* KxSMBProvider.h */,
+				5A692DCF205F39650062A3EF /* KxSMBProvider.m */,
+				5A692DD0205F39650062A3EF /* libs */,
+			);
+			path = KxSMB;
+			sourceTree = "<group>";
+		};
+		5A692DD0205F39650062A3EF /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DD1205F39650062A3EF /* libsmbclient.a */,
+				5A692DD2205F39650062A3EF /* libsmbclient.h */,
+				5A692DD3205F39650062A3EF /* libtalloc.a */,
+				5A692DD4205F39650062A3EF /* libtdb.a */,
+				5A692DD5205F39650062A3EF /* libtevent.a */,
+				5A692DD6205F39650062A3EF /* libwbclient.a */,
+				5A692DD7205F39650062A3EF /* talloc.h */,
+				5A692DD8205F39650062A3EF /* talloc_stack.h */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		5A692DD9205F39650062A3EF /* XLSambaTask */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DDA205F39650062A3EF /* XLSambaDownloadHandler.h */,
+				5A692DDB205F39650062A3EF /* XLSambaDownloadHandler.m */,
+				5A692DDC205F39650062A3EF /* XLSambaDownloadTask.h */,
+				5A692DDD205F39650062A3EF /* XLSambaDownloadTask.m */,
+				5A692DDE205F39650062A3EF /* XLSambaTask.h */,
+				5A692DDF205F39650062A3EF /* XLSambaTask.m */,
+				5A692DE0205F39650062A3EF /* XLSambaUploadHandler.h */,
+				5A692DE1205F39650062A3EF /* XLSambaUploadHandler.m */,
+				5A692DE2205F39650062A3EF /* XLSambaUploadTask.h */,
+				5A692DE3205F39650062A3EF /* XLSambaUploadTask.m */,
+				5A692DE4205F39650062A3EF /* XLUploadTask.h */,
+				5A692DE5205F39650062A3EF /* XLUploadTask.m */,
+			);
+			path = XLSambaTask;
+			sourceTree = "<group>";
+		};
+		5A692DF8205F3A6F0062A3EF /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5A692DF9205F3A6F0062A3EF /* FastCodeHeader.h */,
+				5A692DFA205F3A6F0062A3EF /* FrameHeader.h */,
+				5A692DFC205F3A6F0062A3EF /* SystemDeviceHeader.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A692DAB205F39590062A3EF /* SambaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A692DC2205F39590062A3EF /* Build configuration list for PBXNativeTarget "SambaDemo" */;
+			buildPhases = (
+				C711B777C25B19EA4957078E /* [CP] Check Pods Manifest.lock */,
+				5A692DA8205F39590062A3EF /* Sources */,
+				5A692DA9205F39590062A3EF /* Frameworks */,
+				5A692DAA205F39590062A3EF /* Resources */,
+				652BC2EBE50B373455B271C1 /* [CP] Embed Pods Frameworks */,
+				DCEE2909815A7DD37D853AD2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SambaDemo;
+			productName = SambaDemo;
+			productReference = 5A692DAC205F39590062A3EF /* SambaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A692DA4205F39590062A3EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = xll;
+				TargetAttributes = {
+					5A692DAB205F39590062A3EF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5A692DA7205F39590062A3EF /* Build configuration list for PBXProject "SambaDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A692DA3205F39590062A3EF;
+			productRefGroup = 5A692DAD205F39590062A3EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A692DAB205F39590062A3EF /* SambaDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A692DAA205F39590062A3EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A692DBC205F39590062A3EF /* LaunchScreen.storyboard in Resources */,
+				5A692DB9205F39590062A3EF /* Assets.xcassets in Resources */,
+				5A692DB7205F39590062A3EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		652BC2EBE50B373455B271C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SambaDemo/Pods-SambaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C711B777C25B19EA4957078E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SambaDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCEE2909815A7DD37D853AD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SambaDemo/Pods-SambaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A692DA8205F39590062A3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A692DF2205F39650062A3EF /* XLSambaUploadHandler.m in Sources */,
+				5A692DB4205F39590062A3EF /* ViewController.m in Sources */,
+				5A692DEF205F39650062A3EF /* XLSambaDownloadHandler.m in Sources */,
+				5A692DF0205F39650062A3EF /* XLSambaDownloadTask.m in Sources */,
+				5A692DF7205F39C90062A3EF /* SambaPathFormatter.m in Sources */,
+				5A692DF4205F39650062A3EF /* XLUploadTask.m in Sources */,
+				5A692DE8205F39650062A3EF /* EasySambaHTTPServer.m in Sources */,
+				5A692DBF205F39590062A3EF /* main.m in Sources */,
+				5A692DF3205F39650062A3EF /* XLSambaUploadTask.m in Sources */,
+				5A692DB1205F39590062A3EF /* AppDelegate.m in Sources */,
+				5A692DE7205F39650062A3EF /* EasySambaHTTPConnection.m in Sources */,
+				5A692DE9205F39650062A3EF /* KxSMBProvider.m in Sources */,
+				5A692DE6205F39650062A3EF /* EasySambaFileHTTPResponse.m in Sources */,
+				5A692DF1205F39650062A3EF /* XLSambaTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A692DB5205F39590062A3EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A692DB6205F39590062A3EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A692DBA205F39590062A3EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A692DBB205F39590062A3EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A692DC0205F39590062A3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A692DC1205F39590062A3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A692DC3205F39590062A3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7F1E549BFD666C87FE7DC7 /* Pods-SambaDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXN5JP95UD;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SambaDemo/SambaDemo.pch";
+				INFOPLIST_FILE = SambaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SambaDemo/samba/KxSMB/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xll.SambaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A692DC4205F39590062A3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FE81C31E0703E5C489409E /* Pods-SambaDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXN5JP95UD;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SambaDemo/SambaDemo.pch";
+				INFOPLIST_FILE = SambaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SambaDemo/samba/KxSMB/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xll.SambaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A692DA7205F39590062A3EF /* Build configuration list for PBXProject "SambaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A692DC0205F39590062A3EF /* Debug */,
+				5A692DC1205F39590062A3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A692DC2205F39590062A3EF /* Build configuration list for PBXNativeTarget "SambaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A692DC3205F39590062A3EF /* Debug */,
+				5A692DC4205F39590062A3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A692DA4205F39590062A3EF /* Project object */;
+}
