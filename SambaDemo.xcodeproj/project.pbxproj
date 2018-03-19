@@ -528,7 +528,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SambaDemo/samba/KxSMB/libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xll.SambaDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xll.SambaDemoXLL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -550,7 +550,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SambaDemo/samba/KxSMB/libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xll.SambaDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xll.SambaDemoXLL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

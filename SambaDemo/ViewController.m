@@ -10,6 +10,8 @@
 #import "KxSMBProvider.h"
 #import "XLSambaDownloadHandler.h"
 #import "XLSambaUploadHandler.h"
+#import "EasySambaHTTPServer.h"
+#import "AFHTTPSessionManager.h"
 @interface ViewController ()
 
 @end
@@ -18,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     NSArray *items = [[KxSMBProvider sharedSmbProvider] fetchAtPath:@"smb://172.18.180.242/"];
     NSLog(@"%@",items);
 //        [[KxSMBProvider sharedSmbProvider]createFileAtPath:@"smb://172.18.180.242/xiaohong.txt" overwrite:YES];

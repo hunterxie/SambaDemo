@@ -15,6 +15,9 @@
 //参考https://github.com/inoccu/SambaClient_iOS
 //参考 https://github.com/FlameGrace/EasySamba
 
+
+//一定要保证你的应用已经允许使用的网络权限
+
 @interface ViewController : UIViewController
 
 
